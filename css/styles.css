@@ -93,6 +93,15 @@ body {
     transform: scale(1.1);
 }
 
+.navbar-scrolled-up {
+    transition: top 0.3s;
+    top: 0;
+}
+.navbar-scrolled-down {
+    transition: top 0.3s;
+    top: -100px;
+}
+
 /* Profile and Content Styles */
 .profile-img-container {
     width: 250px;
@@ -250,6 +259,22 @@ h1, h2, h3 {
 .portfolio-item:hover {
     transform: translateY(-10px);
 }
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Adjust width as needed */
+    opacity: 1; /* Make arrows fully visible */
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Background for better visibility */
+    border-radius: 50%; /* Round background */
+}
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(81, 81, 81); /* Set the default background color to black */
+}
+.carousel-indicators .active {
+    background-color: rgb(0, 0, 0); /* Set the active indicator background color to white */
+}
+
 
 /* Responsive Design */
 @media (max-width: 991px) {
