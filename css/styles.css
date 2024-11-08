@@ -257,7 +257,7 @@ h1, h2, h3 {
 }
 
 .portfolio-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px);   
 }
 
 .carousel-control-prev, .carousel-control-next {
