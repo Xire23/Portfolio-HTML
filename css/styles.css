@@ -83,10 +83,10 @@ body {
 }
 
 #logo {
-    height: 90px; /* Increase the height of the logo */
+    height: 90px;
     display: block;
     transition: transform 0.3s ease;
-    object-fit: contain; /* Ensure the image scales without stretching */
+    object-fit: contain;
 }
 
 
