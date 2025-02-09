@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity VR - Ching Hao Min</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient">
+    
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" height="90" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid pt-5">  <!-- Added margin-top and margin-bottom -->
+    <div class="row glassmorphism mx-4 py-5 rounded-5 mt-5">
+        <div class="col-12">
+            <h1 class="text-primary text-center mb-5">Escape Room - Unity VR</h1>
+            
+            <div class="text-center mb-4">
+                <video width="80%" class="rounded-4 shadow" controls>
+                    <source src="images/UnityVR.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h3 class="text-primary">Project Overview</h3>
+            <p class="lead">The Escape Room app is an immersive virtual reality experience developed using Unity, where users can explore and solve puzzles within various themed rooms. The app allows players to interact with objects, uncover hidden clues, and complete challenges in a fully interactive environment. With an intuitive design, it offers a captivating and engaging experience, ideal for players seeking a thrilling escape room adventure in VR.</p>
+            <h4 class="text-primary mt-4">Project Details</h4>
+            <p><strong>Duration:</strong> April 22th 2024 - August 2nd 2024</p>
+            <p><strong>Type:</strong> Virtual Reality Unity Escape Room Project</p>
+            
+            <h4 class="text-primary mt-4">Key Achievements</h4>
+            <ul> 
+                <li>Developed an immersive Escape Room app in Unity VR, featuring interactive puzzles and themed rooms</li> 
+                <li>Created Rooms for players to explore and solve challenges, providing a dynamic and engaging experience</li> 
+                <li>Gained hands-on experience in Unity and VR development for creating interactive and immersive environments</li> 
+                <li>Enhanced skills in managing 3D objects, interactions, and immersive gameplay within a virtual reality setting</li> 
+            </ul>
+            
+            <h4 class="text-primary mt-4">Technologies Used</h4>
+            <div class="skills-container">
+                <div class="text-center badge bg-primary me-2 mb-2">
+                    <img src="images/Unity.png" alt="Unity" style="height: 50px;">
+                    <div>Unity</div>
+                </div>
+                <div class="text-center badge bg-primary me-2 mb-2">
+                    <img src="images/Csharp.png" alt="C#" style="height: 50px;">
+                    <div>C#</div>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <a href="documents/CAG.zip" class="btn btn-primary me-2" download>
+                    <i class="fas fa-download me-2"></i>Download Code Files
+                </a>
+                <a href="documents/APK.zip" class="btn btn-primary me-2" download>
+                    <i class="fas fa-download me-2"></i>Download APK file
+                </a>
+                <a href="documents/Unity VR Planning.docx" class="btn btn-primary me-2" download>
+                    <i class="fas fa-download me-2"></i>Download Documents
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // JavaScript for hiding navbar on scroll
+    let prevScrollPos = window.pageYOffset;
+    const navbar = document.querySelector(".navbar");
+
+    window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+            // Scrolling up
+            navbar.classList.remove("navbar-scrolled-down");
+            navbar.classList.add("navbar-scrolled-up");
+        } else {
+            // Scrolling down
+            navbar.classList.remove("navbar-scrolled-up");
+            navbar.classList.add("navbar-scrolled-down");
+        }
+        prevScrollPos = currentScrollPos;
+    };
+</script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
