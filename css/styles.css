@@ -268,6 +268,12 @@ h1, h2, h3 {
     border-radius: 10px;  /* Optional, you can add rounded corners */
 }
 
+.card {
+    height: 100%; /* Makes all cards the same height */
+    display: flex;
+    flex-direction: column;
+}
+
 /* Carousel */
 .carousel-control-prev, .carousel-control-next {
     width: 5%; /* Adjust width as needed */
